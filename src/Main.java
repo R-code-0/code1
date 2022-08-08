@@ -1,9 +1,15 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
         Triangle t = new Triangle();
-        t.a=5;
-        t.b=6.5;
-        t.c=3;
+        System.out.print("Enter a: ");
+        t.a = s.nextDouble();
+        System.out.print("Enter b: ");
+        t.b = s.nextDouble();
+        System.out.print("Enter c: ");
+        t.c = s.nextDouble();
         t.area();
     }
 }
